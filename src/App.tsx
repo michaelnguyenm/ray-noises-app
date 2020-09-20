@@ -9,6 +9,7 @@ import {
   Grid,
   Card,
   CardContent,
+  Hidden,
   Typography,
   Button,
 } from "@material-ui/core";
@@ -25,16 +26,28 @@ declare global {
 
 const useStyles = makeStyles((theme) => ({
   box: {
+    position: "relative",
     borderTop: "30px solid #749fd2",
     borderBottom: "30px solid #749fd2",
     backgroundImage:
       "repeating-linear-gradient(to bottom, transparent, transparent 40px, #ffffff 40px, #ffffff 41px), repeating-linear-gradient(to right, #fbe0dd, #fbe0dd 40px, #ffffff 40px, #ffffff 41px);",
+    overflowX: "hidden",
+    overflowY: "hidden",
   },
   boxPadding: {
     paddingTop: "10vh",
+    paddingLeft: "30px",
+    paddingRight: "30px",
+  },
+  image: {
+    position: "absolute",
+    right: 0,
+    bottom: -450,
+    zIndex: 99,
   },
   card: {
     height: "50vh",
+    zIndex: 100,
   },
   cardHeader: {
     backgroundColor: "#fde5ab",
@@ -61,9 +74,21 @@ function App() {
   if (fileList.length === 0) return <LoadingSpinner />;
   return (
     <Box component="div" height="100vh" className={classes.box}>
+      <Box component="div" className={classes.image}>
+        <img alt="Whatchu pointing your mouse at?" src="./ray_test.png" />
+      </Box>
       <Grid container>
-        <Grid container item xs={1} />
-        <Grid container item xs={4} className={classes.boxPadding}>
+        <Hidden xsDown>
+          <Grid container item xs={1} />
+        </Hidden>
+        <Grid
+          container
+          item
+          xs={12}
+          sm={8}
+          md={6}
+          className={classes.boxPadding}
+        >
           <Card className={classes.card}>
             <CardContent className={classes.cardHeader}>
               <Typography variant="h3" className={classes.typographyHeader}>
