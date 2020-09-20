@@ -1,0 +1,10 @@
+[
+  {
+    "filename": "car.vorbis",
+    "buttonNames": { "en": "Car", "ja": "車", "ko": "자동차" }
+  },
+  {
+    "filename": "brr.vorbis",
+    "buttonNames": { "en": "Brr", "ja": "", "ko": "" }
+  }
+]
