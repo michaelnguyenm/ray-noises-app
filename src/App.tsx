@@ -2,8 +2,6 @@ import React, { useState, useEffect, useContext } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 
-import url from "url";
-
 import {
   Box,
   Grid,
@@ -11,18 +9,11 @@ import {
   CardContent,
   Hidden,
   Typography,
-  Button,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import LoadingSpinner from "./LoadingSpinner";
-import { DEFAULT_MEDIA_LOCATION, AUDIO_JSON_FILENAME } from "./Constants";
-
-declare global {
-  interface Window {
-    REACT_APP_MEDIA_LOCATION: string | null | undefined;
-  }
-}
+import CardList from "./CardList";
 
 const useStyles = makeStyles((theme) => ({
   box: {
@@ -34,8 +25,11 @@ const useStyles = makeStyles((theme) => ({
     overflowX: "hidden",
     overflowY: "hidden",
   },
+  boxHeading: {
+    backgroundColor: "white",
+  },
   boxPadding: {
-    paddingTop: "10vh",
+    paddingTop: "5vh",
     paddingLeft: "30px",
     paddingRight: "30px",
   },
@@ -46,7 +40,8 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 99,
   },
   card: {
-    height: "50vh",
+    // height: "50vh",
+    width: "100vw",
     zIndex: 100,
   },
   cardHeader: {
@@ -60,22 +55,12 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-  const [fileList, setFileList] = useState([]);
-  useEffect(() => {
-    fetch(url.resolve(DEFAULT_MEDIA_LOCATION, AUDIO_JSON_FILENAME))
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setFileList(data);
-      });
-  }, []);
 
-  if (fileList.length === 0) return <LoadingSpinner />;
+  // if (fileList.length === 0) return <LoadingSpinner />;
   return (
     <Box component="div" height="100vh" className={classes.box}>
-      <Box component="div" className={classes.image}>
-        <img alt="Whatchu pointing your mouse at?" src="./ray_test.png" />
+      <Box height="100px" className={classes.boxHeading}>
+        <Typography variant="h2">Akina Ray</Typography>
       </Box>
       <Grid container>
         <Hidden xsDown>
@@ -85,27 +70,23 @@ function App() {
           container
           item
           xs={12}
-          sm={8}
+          sm={9}
           md={6}
           className={classes.boxPadding}
         >
           <Card className={classes.card}>
             <CardContent className={classes.cardHeader}>
-              <Typography variant="h3" className={classes.typographyHeader}>
-                test
+              <Typography variant="h4" className={classes.typographyHeader}>
+                Sounds
               </Typography>
             </CardContent>
-            <Typography variant="h5">{process.env.NODE_ENV}</Typography>
-            <Typography variant="h5">{`Hostname: ${window.REACT_APP_MEDIA_LOCATION}`}</Typography>
-            <Typography variant="h5">{`DEFAULT_MEDIA_LOCATION: ${url.resolve(
-              DEFAULT_MEDIA_LOCATION,
-              AUDIO_JSON_FILENAME
-            )}`}</Typography>
-            <Typography variant="h5">{fileList.toString()}</Typography>
-            <Button color="primary">Test</Button>
+            <CardList />
           </Card>
         </Grid>
       </Grid>
+      <Box component="div" className={classes.image}>
+        <img alt="Whatchu pointing your mouse at?" src="./ray_test.png" />
+      </Box>
     </Box>
   );
 }
