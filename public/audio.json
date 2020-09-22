@@ -13,6 +13,6 @@
   },
   {
     "fileName": "whistle.opus",
-    "buttonNames": { "en": "Whistle", "ja": "", "ko": "" }
+    "buttonNames": { "en": "Whistle", "ja": "口笛", "ko": "휘파람" }
   }
 ]

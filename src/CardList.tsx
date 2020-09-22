@@ -30,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function playAudio(fileName: string) {
+  const newAudio = new Audio(url.resolve(DEFAULT_MEDIA_LOCATION, fileName));
+  newAudio.play();
+}
+
 function CardList() {
   const classes = useStyles();
   const [fileList, setFileList] = useState([]);
@@ -43,14 +48,9 @@ function CardList() {
       });
   }, []);
 
-  function playAudio(fileName: string) {
-    const newAudio = new Audio(url.resolve(DEFAULT_MEDIA_LOCATION, fileName));
-    newAudio.play();
-  }
-
   function renderListItem(file: AudioFile) {
     return (
-      <Grid container item xs={12} md={6} lg={4} xl={3}>
+      <Grid container item xs={12} sm={4} xl={3} key={file.fileName}>
         <Button
           className={classes.button}
           onClick={() => {

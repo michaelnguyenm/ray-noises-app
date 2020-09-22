@@ -8,12 +8,15 @@ import {
   Card,
   CardContent,
   Hidden,
+  Link,
   Typography,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import LoadingSpinner from "./LoadingSpinner";
+import Heading from "./Heading";
 import CardList from "./CardList";
+import RayImage from "./RayImage";
 
 const useStyles = makeStyles((theme) => ({
   box: {
@@ -22,10 +25,6 @@ const useStyles = makeStyles((theme) => ({
       "linear-gradient(to top, #749fd2, #749fd2 30px,  transparent 30px), repeating-linear-gradient(to bottom, transparent, transparent 40px, #ffffff 40px, #ffffff 41px), repeating-linear-gradient(to right, #fbe0dd, #fbe0dd 40px, #ffffff 40px, #ffffff 41px); ",
     overflowX: "hidden",
     overflowY: "hidden",
-  },
-  boxHeading: {
-    background:
-      "linear-gradient(to bottom, #749fd2, #749fd2 30px, #ffffff 30px)",
   },
   gridPadding: {
     paddingTop: "5vh",
@@ -58,26 +57,12 @@ function App() {
   // if (fileList.length === 0) return <LoadingSpinner />;
   return (
     <Box component="div" height="100vh" className={classes.box}>
-      <Box height="130px" className={classes.boxHeading}>
-        <img
-          style={{ paddingLeft: "20px" }}
-          height="100%"
-          alt="This took too long to photoshop."
-          src="./akiraray_header.png"
-        />
-      </Box>
+      <Heading />
       <Grid container>
         <Hidden xsDown>
           <Grid container item xs={1} />
         </Hidden>
-        <Grid
-          container
-          item
-          xs={12}
-          sm={9}
-          md={6}
-          className={classes.gridPadding}
-        >
+        <Grid container item xs={12} md={6} className={classes.gridPadding}>
           <Card className={classes.card}>
             <CardContent className={classes.cardHeader}>
               <Typography variant="h4" className={classes.typographyHeader}>
@@ -88,9 +73,7 @@ function App() {
           </Card>
         </Grid>
       </Grid>
-      <Box component="div" className={classes.image}>
-        <img alt="Whatchu pointing your mouse at?" src="./ray_test.png" />
-      </Box>
+      <RayImage />
     </Box>
   );
 }
