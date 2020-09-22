@@ -60,7 +60,7 @@ function App() {
   return (
     <Box component="div" height="100vh" className={classes.box}>
       <Box height="100px" className={classes.boxHeading}>
-        <Typography variant="h2">Akina Ray</Typography>
+        <Typography variant="h2">Akira Ray</Typography>
       </Box>
       <Grid container>
         <Hidden xsDown>

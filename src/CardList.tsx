@@ -13,6 +13,11 @@ declare global {
   }
 }
 
+interface AudioFile {
+  fileName: string;
+  buttonNames: { en: string; ja: string; ko: string };
+}
+
 const useStyles = makeStyles((theme) => ({
   cardContent: {
     minHeight: "45vh",
@@ -38,10 +43,22 @@ function CardList() {
       });
   }, []);
 
-  function renderListItem() {
+  function playAudio(fileName: string) {
+    const newAudio = new Audio(url.resolve(DEFAULT_MEDIA_LOCATION, fileName));
+    newAudio.play();
+  }
+
+  function renderListItem(file: AudioFile) {
     return (
       <Grid container item xs={12} md={6} lg={4} xl={3}>
-        <Button className={classes.button}>Test</Button>
+        <Button
+          className={classes.button}
+          onClick={() => {
+            playAudio(file.fileName);
+          }}
+        >
+          {file.buttonNames.en}
+        </Button>
       </Grid>
     );
   }
@@ -49,7 +66,7 @@ function CardList() {
   if (fileList.length === 0) return <LoadingSpinner />;
   return (
     <CardContent className={classes.cardContent}>
-      <Grid container>{fileList.map((file) => renderListItem())}</Grid>
+      <Grid container>{fileList.map((file) => renderListItem(file))}</Grid>
     </CardContent>
   );
 }

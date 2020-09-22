@@ -1,22 +1,18 @@
 [
   {
-    "filename": "car.vorbis",
-    "buttonNames": { "en": "Car", "ja": "車", "ko": "자동차" }
+    "fileName": "brr.opus",
+    "buttonNames": { "en": "BRR", "ja": "", "ko": "" }
   },
   {
-    "filename": "brr.vorbis",
-    "buttonNames": { "en": "Brr", "ja": "", "ko": "" }
+    "fileName": "nyooom.opus",
+    "buttonNames": { "en": "Car 1", "ja": "車", "ko": "자동차" }
   },
   {
-    "filename": "brr.vorbis",
-    "buttonNames": { "en": "Brr", "ja": "", "ko": "" }
+    "fileName": "nyooom2.opus",
+    "buttonNames": { "en": "Car 2", "ja": "車2", "ko": "자동차2" }
   },
   {
-    "filename": "brr.vorbis",
-    "buttonNames": { "en": "Brr", "ja": "", "ko": "" }
-  },
-  {
-    "filename": "brr.vorbis",
-    "buttonNames": { "en": "Brr", "ja": "", "ko": "" }
+    "fileName": "whistle.opus",
+    "buttonNames": { "en": "Whistle", "ja": "", "ko": "" }
   }
 ]
