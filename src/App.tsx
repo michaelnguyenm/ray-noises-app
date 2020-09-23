@@ -43,12 +43,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffff",
     fontFamily: "Pacifico",
   },
-  image: {
-    position: "absolute",
-    right: 0,
-    bottom: -450,
-    zIndex: 99,
-  },
 }));
 
 function App() {
@@ -63,14 +57,7 @@ function App() {
           <Grid container item xs={1} />
         </Hidden>
         <Grid container item xs={12} md={6} className={classes.gridPadding}>
-          <Card className={classes.card}>
-            <CardContent className={classes.cardHeader}>
-              <Typography variant="h4" className={classes.typographyHeader}>
-                Sounds
-              </Typography>
-            </CardContent>
-            <CardList />
-          </Card>
+          <CardList />
         </Grid>
       </Grid>
       <RayImage />

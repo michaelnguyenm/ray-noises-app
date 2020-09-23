@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Hidden, Link, Divider } from "@material-ui/core";
+import { Box, Hidden, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -14,16 +14,16 @@ const useStyles = makeStyles((theme) => ({
   },
   boxFloatLeft: {
     paddingTop: "30px",
-    height: "100px",
+    height: "99px",
     float: "left",
   },
   boxFloatRight: {
-    height: "100px",
+    height: "99px",
     float: "right",
   },
 
   boxDotted: {
-    height: "130px",
+    height: "129px",
     background:
       "repeating-linear-gradient(to bottom, transparent, transparent 3px, #749fd2 3px, #749fd2 6px)",
     float: "left",
@@ -36,7 +36,7 @@ function Heading() {
   return (
     <Box
       component="div"
-      height="130px"
+      height="129px"
       width="100%"
       className={classes.boxHeading}
     >
