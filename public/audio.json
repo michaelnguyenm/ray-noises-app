@@ -1,7 +1,43 @@
 [
   {
+    "fileName": "whispering_canyouhear.opus",
+    "buttonNames": {
+      "en": "Whispering: Can you hear me?",
+      "ja": "聞こえってますか",
+      "ko": ""
+    }
+  },
+  {
+    "fileName": "goodmorning.opus",
+    "buttonNames": {
+      "en": "Good Morning",
+      "ja": "おはよう",
+      "ko": ""
+    }
+  },
+  {
+    "fileName": "sneeze.opus",
+    "buttonNames": {
+      "en": "Sneeze",
+      "ja": "くしゃみ",
+      "ko": ""
+    }
+  },
+  {
+    "fileName": "beatbox.opus",
+    "buttonNames": { "en": "Beatbox", "ja": "ビットボックス", "ko": "" }
+  },
+  {
     "fileName": "brr.opus",
     "buttonNames": { "en": "BRR", "ja": "", "ko": "" }
+  },
+  {
+    "fileName": "cicada.opus",
+    "buttonNames": { "en": "Cicada 1", "ja": "", "ko": "" }
+  },
+  {
+    "fileName": "cicada2.opus",
+    "buttonNames": { "en": "Cicada 2", "ja": "", "ko": "" }
   },
   {
     "fileName": "nyooom.opus",
@@ -14,5 +50,13 @@
   {
     "fileName": "whistle.opus",
     "buttonNames": { "en": "Whistle", "ja": "口笛", "ko": "휘파람" }
+  },
+  {
+    "fileName": "wolf.opus",
+    "buttonNames": { "en": "Wolf Howl", "ja": "オオカミ", "ko": "" }
+  },
+  {
+    "fileName": "unknown1.opus",
+    "buttonNames": { "en": "Unknown 1", "ja": "", "ko": "" }
   }
 ]
