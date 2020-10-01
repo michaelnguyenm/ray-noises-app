@@ -43,6 +43,7 @@ function App() {
     <Box component="div" height="100vh" className={classes.box}>
       <Heading />
       <Grid container>
+        {/* Padding for sizes above xs */}
         <Hidden xsDown>
           <Grid container item xs={1} />
         </Hidden>
