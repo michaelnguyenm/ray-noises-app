@@ -6,6 +6,7 @@ import {
   Button,
   Card,
   CardContent,
+  Divider,
   Grid,
   Typography,
 } from "@material-ui/core";
@@ -13,12 +14,18 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import LoadingSpinner from "./LoadingSpinner";
 import LanguageButton from "./LanguageButton";
-import { DEFAULT_MEDIA_LOCATION, AUDIO_JSON_FILENAME } from "./Constants";
+import {
+  DEFAULT_MEDIA_LOCATION,
+  AUDIO_JSON_FILENAME,
+  IPIFY_KEY,
+} from "./Constants";
 
-declare global {
-  interface Window {
-    REACT_APP_MEDIA_LOCATION: string | null | undefined;
-  }
+interface AudioSection {
+  [key: string]: string | AudioFile[];
+  en: string;
+  ja: string;
+  ko: string;
+  audioFiles: AudioFile[];
 }
 
 interface AudioFile {
@@ -42,7 +49,6 @@ const countryLanguageMapping: {
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    // height: "50vh",
     width: "100vw",
     zIndex: 100,
   },
@@ -78,13 +84,13 @@ function playAudio(fileName: string) {
 
 function CardList() {
   const classes = useStyles();
-  const [fileList, setFileList]: [AudioFile[], any] = useState([]);
+  const [fileList, setFileList]: [AudioSection[], any] = useState([]);
   const [language, setLanguage]: [
     string,
     React.Dispatch<React.SetStateAction<string>>
   ] = useState(localStorage.getItem("language") || "");
 
-  // Get json file with audio files
+  // Get json file with audio file names
   useEffect(() => {
     fetch(url.resolve(DEFAULT_MEDIA_LOCATION, AUDIO_JSON_FILENAME))
       .then((response) => {
@@ -98,7 +104,7 @@ function CardList() {
   // Get location based on ip address unless language has been stored locally already
   useEffect(() => {
     if (!language) {
-      fetch(`https://geo.ipify.org/api/v1?apiKey=`)
+      fetch(`https://geo.ipify.org/api/v1?apiKey=${IPIFY_KEY}`)
         .then((response) => {
           return response.json();
         })
@@ -124,7 +130,7 @@ function CardList() {
     }
   }, [language]);
 
-  function renderListItem(file: AudioFile) {
+  function renderButton(file: AudioFile) {
     return (
       <Grid container item xs={12} sm={4} xl={3} key={file.fileName}>
         <Button
@@ -138,6 +144,19 @@ function CardList() {
             : file.buttonNames["en"]}
         </Button>
       </Grid>
+    );
+  }
+
+  function renderSection(section: AudioSection) {
+    return (
+      <React.Fragment>
+        <Grid container item xs={12}>
+          <Typography variant="subtitle1">
+            {section[language] ? `${section[language]}` : section["en"]}
+          </Typography>
+        </Grid>
+        {section.audioFiles.map((file) => renderButton(file))}
+      </React.Fragment>
     );
   }
 
@@ -163,7 +182,7 @@ function CardList() {
           {fileList.length === 0 || !language ? (
             <LoadingSpinner />
           ) : (
-            fileList.map((file) => renderListItem(file))
+            fileList.map((file) => renderSection(file))
           )}
         </Grid>
       </CardContent>

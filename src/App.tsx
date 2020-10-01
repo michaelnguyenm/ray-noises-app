@@ -1,19 +1,8 @@
-import React, { useState, useEffect, useContext } from "react";
-// import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 
-import {
-  Box,
-  Grid,
-  Card,
-  CardContent,
-  Hidden,
-  Link,
-  Typography,
-} from "@material-ui/core";
+import { Box, Grid, Hidden, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import LoadingSpinner from "./LoadingSpinner";
 import Heading from "./Heading";
 import CardList from "./CardList";
 import RayImage from "./RayImage";
@@ -26,29 +15,16 @@ const useStyles = makeStyles((theme) => ({
     overflowX: "hidden",
     overflowY: "hidden",
   },
-  gridPadding: {
+  grid: {
     paddingTop: "5vh",
     paddingLeft: "30px",
     paddingRight: "30px",
-  },
-  card: {
-    // height: "50vh",
-    width: "100vw",
-    zIndex: 100,
-  },
-  cardHeader: {
-    backgroundColor: "#fde5ab",
-  },
-  typographyHeader: {
-    color: "#ffffff",
-    fontFamily: "Pacifico",
   },
 }));
 
 function App() {
   const classes = useStyles();
 
-  // if (fileList.length === 0) return <LoadingSpinner />;
   return (
     <Box component="div" height="100vh" className={classes.box}>
       <Heading />
@@ -56,7 +32,7 @@ function App() {
         <Hidden xsDown>
           <Grid container item xs={1} />
         </Hidden>
-        <Grid container item xs={12} md={6} className={classes.gridPadding}>
+        <Grid container item xs={12} md={6} className={classes.grid}>
           <CardList />
         </Grid>
       </Grid>

@@ -4,16 +4,16 @@ import { Box, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  imageSm: {
+  box: {
     position: "absolute",
+    bottom: "-25px",
+  },
+  imageSm: {
     right: 0,
-    bottom: -450,
     zIndex: 99,
   },
   imageMd: {
-    position: "absolute",
-    right: 0,
-    bottom: -100,
+    paddingLeft: "57vw",
     zIndex: 99,
   },
 }));
@@ -21,14 +21,10 @@ const useStyles = makeStyles((theme) => ({
 function RayImage() {
   const classes = useStyles();
   return (
-    <Box component="div">
+    <Box component="div" className={classes.box}>
       <Hidden smDown>
         <Box className={classes.imageMd}>
-          <img
-            width="100%"
-            alt="Akira Ray should be here."
-            src="./ray_test.png"
-          />
+          <img alt="Akira Ray should be here." src="./akiraray_normal.png" />
         </Box>
       </Hidden>
       <Hidden mdUp>
@@ -36,7 +32,7 @@ function RayImage() {
           <img
             width="100%"
             alt="Akira Ray should be here."
-            src="./ray_test.png"
+            src="./akiraray_peek.png"
           />
         </Box>
       </Hidden>

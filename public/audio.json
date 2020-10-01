@@ -1,62 +1,80 @@
 [
   {
-    "fileName": "whispering_canyouhear.opus",
-    "buttonNames": {
-      "en": "Whispering: Can you hear me?",
-      "ja": "聞こえってますか",
-      "ko": ""
-    }
+    "en": "Japanese",
+    "ja": "日本語",
+    "ko": "",
+    "audioFiles": [
+      {
+        "fileName": "whispering_canyouhear.opus",
+        "buttonNames": {
+          "en": "Whispering: Can you hear me?",
+          "ja": "聞こえてますか",
+          "ko": ""
+        }
+      },
+      {
+        "fileName": "goodmorning.opus",
+        "buttonNames": {
+          "en": "Good Morning",
+          "ja": "おはよう",
+          "ko": ""
+        }
+      }
+    ]
   },
   {
-    "fileName": "goodmorning.opus",
-    "buttonNames": {
-      "en": "Good Morning",
-      "ja": "おはよう",
-      "ko": ""
-    }
-  },
-  {
-    "fileName": "sneeze.opus",
-    "buttonNames": {
-      "en": "Sneeze",
-      "ja": "くしゃみ",
-      "ko": ""
-    }
-  },
-  {
-    "fileName": "beatbox.opus",
-    "buttonNames": { "en": "Beatbox", "ja": "ビットボックス", "ko": "" }
-  },
-  {
-    "fileName": "brr.opus",
-    "buttonNames": { "en": "BRR", "ja": "", "ko": "" }
-  },
-  {
-    "fileName": "cicada.opus",
-    "buttonNames": { "en": "Cicada 1", "ja": "", "ko": "" }
-  },
-  {
-    "fileName": "cicada2.opus",
-    "buttonNames": { "en": "Cicada 2", "ja": "", "ko": "" }
-  },
-  {
-    "fileName": "nyooom.opus",
-    "buttonNames": { "en": "Car 1", "ja": "車", "ko": "자동차" }
-  },
-  {
-    "fileName": "nyooom2.opus",
-    "buttonNames": { "en": "Car 2", "ja": "車2", "ko": "자동차2" }
-  },
-  {
-    "fileName": "whistle.opus",
-    "buttonNames": { "en": "Whistle", "ja": "口笛", "ko": "휘파람" }
-  },
-  {
-    "fileName": "wolf.opus",
-    "buttonNames": { "en": "Wolf Howl", "ja": "オオカミ", "ko": "" }
-  },
-  {
-    "fileName": "unknown1.opus",
-    "buttonNames": { "en": "Unknown 1", "ja": "", "ko": "" }
+    "en": "Sounds",
+    "ja": "",
+    "ko": "",
+    "audioFiles": [
+      {
+        "fileName": "sneeze.opus",
+        "buttonNames": {
+          "en": "Sneeze",
+          "ja": "くしゃみ",
+          "ko": "재채기"
+        }
+      },
+      {
+        "fileName": "beatbox.opus",
+        "buttonNames": {
+          "en": "Beatbox",
+          "ja": "ビートボックス",
+          "ko": "비트박스"
+        }
+      },
+      {
+        "fileName": "brr.opus",
+        "buttonNames": { "en": "BRR", "ja": "", "ko": "" }
+      },
+      {
+        "fileName": "cicada.opus",
+        "buttonNames": { "en": "Cicada 1", "ja": "セミ1", "ko": "매미1" }
+      },
+      {
+        "fileName": "cicada2.opus",
+        "buttonNames": { "en": "Cicada 2", "ja": "セミ2", "ko": "매미2" }
+      },
+      {
+        "fileName": "nyooom.opus",
+        "buttonNames": { "en": "Car 1", "ja": "車1", "ko": "자동차2" }
+      },
+      {
+        "fileName": "nyooom2.opus",
+        "buttonNames": { "en": "Car 2", "ja": "車2", "ko": "자동차2" }
+      },
+      {
+        "fileName": "whistle.opus",
+        "buttonNames": { "en": "Whistle", "ja": "口笛", "ko": "휘파람" }
+      },
+      {
+        "fileName": "wolf.opus",
+        "buttonNames": { "en": "Wolf", "ja": "オオカミ", "ko": "회색늑대" }
+      },
+      {
+        "fileName": "unknown1.opus",
+        "buttonNames": { "en": "Unknown 1", "ja": "", "ko": "" }
+      }
+    ]
   }
 ]

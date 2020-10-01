@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     float: "right",
   },
 
-  boxDotted: {
+  boxDottedLine: {
     height: "129px",
     background:
       "repeating-linear-gradient(to bottom, transparent, transparent 3px, #749fd2 3px, #749fd2 6px)",
@@ -54,7 +54,7 @@ function Heading() {
           />
         </Link>
       </Box>
-      <Box component="div" width="3px" className={classes.boxDotted} />
+      <Box component="div" width="3px" className={classes.boxDottedLine} />
       <Hidden xsDown>
         <Box component="div" width="1px" className={classes.boxFloatLeft}>
           <Link
