@@ -6,7 +6,6 @@ import {
   Button,
   Card,
   CardContent,
-  Divider,
   Grid,
   Typography,
 } from "@material-ui/core";
@@ -20,6 +19,11 @@ import {
   IPIFY_KEY,
 } from "./Constants";
 
+/**
+ * The JSON file privided is a list of sections with section names
+ * in English, Japanese, and Korean. For a given section, there is a
+ * list of audio files.
+ */
 interface AudioSection {
   [key: string]: string | AudioFile[];
   en: string;
@@ -28,6 +32,11 @@ interface AudioSection {
   audioFiles: AudioFile[];
 }
 
+/**
+ * The JSON file provided also has an entry in the list of audio files
+ * for the name of the file as well as the label that will be used for
+ * the button in English, Japanese, and Korean
+ */
 interface AudioFile {
   fileName: string;
   buttonNames: {
@@ -38,6 +47,9 @@ interface AudioFile {
   };
 }
 
+/**
+ * Maps the ISO 3166 country code to the ISO 639-1 country language
+ */
 const countryLanguageMapping: {
   [key: string]: string;
   KR: string;
@@ -77,11 +89,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/**
+ * Makes a request for a file at the given URL to play the audio
+ * @param fileName The file that will be played
+ */
 function playAudio(fileName: string) {
   const newAudio = new Audio(url.resolve(DEFAULT_MEDIA_LOCATION, fileName));
   newAudio.play();
 }
 
+/**
+ * Render the card which will hold a list of sections and buttons
+ */
 function CardList() {
   const classes = useStyles();
   const [fileList, setFileList]: [AudioSection[], any] = useState([]);
@@ -130,6 +149,10 @@ function CardList() {
     }
   }, [language]);
 
+  /**
+   * Renders the button for a given file
+   * @param file The file information to use for the button
+   */
   function renderButton(file: AudioFile) {
     return (
       <Grid container item xs={12} sm={4} xl={3} key={file.fileName}>
@@ -147,6 +170,10 @@ function CardList() {
     );
   }
 
+  /**
+   * Renders the section for a list of files
+   * @param section The section label for the list of files
+   */
   function renderSection(section: AudioSection) {
     return (
       <React.Fragment>

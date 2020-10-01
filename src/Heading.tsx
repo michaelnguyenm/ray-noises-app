@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/**
+ * Renders the heading for the application, imitates Ray's Youtube stream layout
+ */
 function Heading() {
   const classes = useStyles();
 

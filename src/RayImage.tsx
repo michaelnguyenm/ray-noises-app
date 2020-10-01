@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/**
+ * Renders the appropriate Ray image for the designated layout size
+ */
 function RayImage() {
   const classes = useStyles();
   return (

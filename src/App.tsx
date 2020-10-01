@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Box, Grid, Hidden, Typography } from "@material-ui/core";
+import { GitHub } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Heading from "./Heading";
@@ -15,6 +16,16 @@ const useStyles = makeStyles((theme) => ({
     overflowX: "hidden",
     overflowY: "hidden",
   },
+  boxFooter: {
+    position: "absolute",
+    left: "3px",
+    bottom: "3px",
+  },
+  boxFooterRight: {
+    position: "absolute",
+    right: "0px",
+    bottom: "0px",
+  },
   grid: {
     paddingTop: "5vh",
     paddingLeft: "30px",
@@ -22,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/**
+ * Renders the application
+ */
 function App() {
   const classes = useStyles();
 
@@ -37,6 +51,17 @@ function App() {
         </Grid>
       </Grid>
       <RayImage />
+      <Box className={classes.boxFooter}>
+        <Typography>Unofficial fansite - 非公式ファンサイトです</Typography>
+      </Box>
+      {/* This has intentionally been hidden to prevent self-promotion on the public website. */}
+      <Hidden xsUp implementation="css">
+        <Box className={classes.boxFooterRight}>
+          <a href="https://github.com/michaelnguyenm/ray-noises-app">
+            <GitHub />
+          </a>
+        </Box>
+      </Hidden>
     </Box>
   );
 }
