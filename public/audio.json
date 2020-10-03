@@ -2,15 +2,18 @@
   {
     "en": "Japanese",
     "ja": "日本語",
-    "ko": "",
+    "ko": "일본어",
     "audioFiles": [
       {
         "fileName": "whispering_canyouhear.opus",
         "buttonNames": {
           "en": "Whispering: Can you hear me?",
-          "ja": "聞こえてますか",
+          "ja": "ささやき声で：聞こえてますか",
           "ko": ""
-        }
+        },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:41:02.628",
+        "timeEnd": "01:41:04.216"
       },
       {
         "fileName": "goodmorning.opus",
@@ -18,7 +21,39 @@
           "en": "Good Morning",
           "ja": "おはよう",
           "ko": ""
-        }
+        },
+        "source": "https://www.youtube.com/watch?v=lio_bkEaxE8",
+        "timeStart": "00:02:27.810",
+        "timeEnd": "00:02:28.192"
+      }
+    ]
+  },
+  {
+    "en": "Korean",
+    "ja": "韓国語",
+    "ko": "한국어",
+    "audioFiles": [
+      {
+        "fileName": "ko_annyeong.opus",
+        "buttonNames": {
+          "en": "Hi!",
+          "ja": "あにょ～ん",
+          "ko": "안녕"
+        },
+        "source": "https://www.youtube.com/watch?v=SoAZ7JgcC6A",
+        "timeStart": "00:00:35.064",
+        "timeEnd": "00:00:36.079"
+      },
+      {
+        "fileName": "ko_fighting.opus",
+        "buttonNames": {
+          "en": "Fighting!",
+          "ja": "ファイト！",
+          "ko": "화이팅"
+        },
+        "source": "https://www.youtube.com/watch?v=SoAZ7JgcC6A",
+        "timeStart": "00:00:45.067",
+        "timeEnd": "0:00:45.774"
       }
     ]
   },
@@ -28,52 +63,125 @@
     "ko": "",
     "audioFiles": [
       {
-        "fileName": "sneeze.opus",
-        "buttonNames": {
-          "en": "Sneeze",
-          "ja": "くしゃみ",
-          "ko": "재채기"
-        }
-      },
-      {
         "fileName": "beatbox.opus",
         "buttonNames": {
           "en": "Beatbox",
           "ja": "ビートボックス",
           "ko": "비트박스"
-        }
+        },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:37:38.853",
+        "timeEnd": "01:37:43.550"
+      },
+      {
+        "fileName": "bird1.opus",
+        "buttonNames": { "en": "Bird 1", "ja": "鳥1", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=Ch_wxhDnGCY",
+        "timeStart": "00:46:44.004",
+        "timeEnd": "00:46:44.726"
+      },
+      {
+        "fileName": "bird2.opus",
+        "buttonNames": { "en": "Bird 2", "ja": "鳥2", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=Ch_wxhDnGCY",
+        "timeStart": "00:46:52.318",
+        "timeEnd": "00:46:53:256"
       },
       {
         "fileName": "brr.opus",
-        "buttonNames": { "en": "BRR", "ja": "", "ko": "" }
+        "buttonNames": { "en": "BRR", "ja": "唇プルプル", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:34:19.539",
+        "timeEnd": "01:34:22.329"
+      },
+      {
+        "fileName": "giggle.opus",
+        "buttonNames": { "en": "Laugh", "ja": "", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=SoAZ7JgcC6A",
+        "timeStart": "00:00:39.739",
+        "timeEnd": "00:00:40.500"
       },
       {
         "fileName": "cicada.opus",
-        "buttonNames": { "en": "Cicada 1", "ja": "セミ1", "ko": "매미1" }
+        "buttonNames": { "en": "Cicada 1", "ja": "セミ1", "ko": "매미1" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:36:25.013",
+        "timeEnd": "01:36:26.393"
       },
       {
         "fileName": "cicada2.opus",
-        "buttonNames": { "en": "Cicada 2", "ja": "セミ2", "ko": "매미2" }
+        "buttonNames": { "en": "Cicada 2", "ja": "セミ2", "ko": "매미2" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:36:35.729",
+        "timeEnd": "01:36:37.485"
+      },
+      {
+        "fileName": "mogumogu.opus",
+        "buttonNames": { "en": "Mogumogu", "ja": "", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
+        "timeStart": "02:41:35.251",
+        "timeEnd": "02:41:36.624"
+      },
+      {
+        "fileName": "moo.opus",
+        "buttonNames": { "en": "Moo", "ja": "", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
+        "timeStart": "02:47:59.959",
+        "timeEnd": "02:48:01.410"
       },
       {
         "fileName": "nyooom.opus",
-        "buttonNames": { "en": "Car 1", "ja": "車1", "ko": "자동차2" }
+        "buttonNames": { "en": "Car 1", "ja": "車1", "ko": "자동차2" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:35:24.607",
+        "timeEnd": "01:35:26.519"
       },
       {
         "fileName": "nyooom2.opus",
-        "buttonNames": { "en": "Car 2", "ja": "車2", "ko": "자동차2" }
+        "buttonNames": { "en": "Car 2", "ja": "車2", "ko": "자동차2" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:35:18.431",
+        "timeEnd": "01:35:20.970"
+      },
+      {
+        "fileName": "sneeze.opus",
+        "buttonNames": {
+          "en": "Sneeze",
+          "ja": "くしゃみ",
+          "ko": "재채기"
+        },
+        "source": "https://www.youtube.com/watch?v=lio_bkEaxE8",
+        "timeStart": "01:01:09.633",
+        "timeEnd": "01:01:12.462"
       },
       {
         "fileName": "whistle.opus",
-        "buttonNames": { "en": "Whistle", "ja": "口笛", "ko": "휘파람" }
+        "buttonNames": { "en": "Whistle", "ja": "口笛", "ko": "휘파람" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:32:12.341",
+        "timeEnd": "01:32:15.006"
       },
       {
         "fileName": "wolf.opus",
-        "buttonNames": { "en": "Wolf", "ja": "オオカミ", "ko": "회색늑대" }
+        "buttonNames": { "en": "Wolf", "ja": "オオカミ", "ko": "회색늑대" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:36:52.181",
+        "timeEnd": "01:37:01.753"
       },
       {
+        "fileName": "yumyum.opus",
+        "buttonNames": { "en": "Eating", "ja": "", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
+        "timeStart": "02:41:36.797",
+        "timeEnd": "02:41:39.069"
+      },
+
+      {
         "fileName": "unknown1.opus",
-        "buttonNames": { "en": "Unknown 1", "ja": "", "ko": "" }
+        "buttonNames": { "en": "Unknown 1", "ja": "", "ko": "" },
+        "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
+        "timeStart": "01:37:52.060",
+        "timeEnd": "01:37:53.581"
       }
     ]
   }
