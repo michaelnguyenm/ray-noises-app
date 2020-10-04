@@ -1,11 +1,12 @@
 {
-  "short_name": "Ray Noises App",
-  "name": "Ray Noises Application",
+  "short_name": "Ray Noises",
+  "name": "Ray Akira Noises App",
+  "description": "Ray Akira noises at the push of a button.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "akiraray_icon.png",
+      "type": "image/png",
+      "sizes": "64x64 32x32 24x24 16x16"
     },
     {
       "src": "logo192.png",

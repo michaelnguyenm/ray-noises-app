@@ -57,6 +57,35 @@ An example command to run the app with the same name as above, change out the ex
 
 As a note, geolocation by IP is blocked by some browsers by default, and IPIFY only gives 1000 free queries per month. If the app does not get the expected json result from IPIFY, any error will result in the language set to English. CORS has not completely been tested since my deployed application resources all come from the included public folder.
 
+## Adding Sounds
+
+Under the public folder, there is an audio.json file. This file contains information on various audio files, including the file name, the source of the audio, and how the button in the UI should be labeled for the audio file. An example of how the json file is formatted:
+
+```json
+[
+  {
+    "en": "SECTION_ENGLISH",
+    "ja": "SECTION_日本語",
+    "ko": "SECTION_일본어",
+    "audioFiles": [
+      {
+        "fileName": "FILE_NAME",
+        "buttonNames": {
+          "en": "BUTTON_ENGLISH",
+          "ja": "BUTTON_日本語",
+          "ko": "BUTTON_일본어"
+        },
+        "source": "YOUTUBE_URL",
+        "timeStart": "HH:MM:SS.MMM",
+        "timeEnd": "HH:MM:SS.MMM"
+      }
+    ]
+  }
+]
+```
+
+There can be multiple sections and multiple audio files under each section. The default for sections as well as button names is en/English. Source URLs are provided to the original youtube videos in the json file, but they are not required. The timeStart and timeEnd are timestamps that can be used in Audacity to get the exact clip that I used, but are also not required for the app to work. I have chosen to use Opus as the audio codec as it is a modern low-latency codec that works in all modern browsers provided that they are updated to at least a version from 2017.
+
 ### Contact
 
 If you have any questions, I can be contacted on Twitter [@thewiggles_jpd](https://twitter.com/TheWiggles_jpd).
