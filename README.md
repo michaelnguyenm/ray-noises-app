@@ -44,16 +44,18 @@ The following environment variables can be used at run-time with the docker imag
 
 ```
 MEDIA_LOCATION: Default is the public folder
-Set this value to the base URL that holds an audio.json file seen in the public folder as an example. CORS must be enabled.
+Set this value to the base URL that holds an audio.json file seen in the public folder as an example.
+CORS must be enabled for the location.
 IPIFY_KEY: Default is "", an empty sting
-Set this value to the key provided at [IPIFY](https://www.ipify.org/) to check geolocation, otherwise the app will default to English.
+Set this value to the key provided at [IPIFY](https://www.ipify.org/) to check geolocation,
+otherwise the app will default to English.
 ```
 
 An example command to run the app with the same name as above, change out the example url and fake key with your actual information:
 
     docker run -e MEDIA_LOCATION=https://yoururl.goeshere -e IPIFY_KEY=YOURKEY --name ray-noises-app -p 1338:80 -d michaelnguyenm/ray-noises-app:latest
 
-As a note, geolocation by IP is blocked by some browsers by default, and IPIFY only gives 1000 free queries per month. CORS has not completely been tested since the application resources all come from the public folder.
+As a note, geolocation by IP is blocked by some browsers by default, and IPIFY only gives 1000 free queries per month. If the app does not get the expected json result from IPIFY, any error will result in the language set to English. CORS has not completely been tested since my deployed application resources all come from the included public folder.
 
 ### Contact
 
