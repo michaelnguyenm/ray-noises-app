@@ -1,6 +1,6 @@
 # Ray Noises App
 
-A simple soundboard application created as a joke for the Nijisanji KR VTuber, [Ray Akira](https://www.youtube.com/channel/UC7hffDQLKIEG-_zoAQkMIvg), but also for me to learn using React local storage, handling multilingual user interfaces, and using Typescript. I personally host the webapp at...
+A simple soundboard application created as a joke for the Nijisanji KR VTuber, [Ray Akira](https://www.youtube.com/channel/UC7hffDQLKIEG-_zoAQkMIvg), but also for me to learn using React local storage, handling multilingual user interfaces, and using Typescript. I personally host the webapp at [rayakiranois.es](https://rayakiranois.es).
 
 ## Getting Started
 
