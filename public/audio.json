@@ -7,9 +7,9 @@
       {
         "fileName": "whispering_canyouhear.opus",
         "buttonNames": {
-          "en": "Whispering: Can you hear me?",
-          "ja": "ささやき声で：聞こえてますか",
-          "ko": ""
+          "en": "Can you hear me? (Whispering)",
+          "ja": "聞こえてますか（囁き声）",
+          "ko": "들리나요?(속삭임)"
         },
         "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
         "timeStart": "01:41:02.628",
@@ -20,11 +20,18 @@
         "buttonNames": {
           "en": "Good Morning",
           "ja": "おはよう",
-          "ko": ""
+          "ko": "안녕"
         },
         "source": "https://www.youtube.com/watch?v=lio_bkEaxE8",
         "timeStart": "00:02:27.810",
         "timeEnd": "00:02:28.192"
+      },
+      {
+        "fileName": "mogumogu.opus",
+        "buttonNames": { "en": "Eating", "ja": "もぐもぐ", "ko": "냠냠" },
+        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
+        "timeStart": "02:41:35.251",
+        "timeEnd": "02:41:36.624"
       }
     ]
   },
@@ -54,13 +61,20 @@
         "source": "https://www.youtube.com/watch?v=SoAZ7JgcC6A",
         "timeStart": "00:00:45.067",
         "timeEnd": "0:00:45.774"
+      },
+      {
+        "fileName": "yumyum.opus",
+        "buttonNames": { "en": "Eating", "ja": "もぐもぐ", "ko": "냠냠" },
+        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
+        "timeStart": "02:41:36.797",
+        "timeEnd": "02:41:39.069"
       }
     ]
   },
   {
-    "en": "Sounds",
-    "ja": "",
-    "ko": "",
+    "en": "Other Sounds",
+    "ja": "他の",
+    "ko": "다른",
     "audioFiles": [
       {
         "fileName": "beatbox.opus",
@@ -75,14 +89,14 @@
       },
       {
         "fileName": "bird1.opus",
-        "buttonNames": { "en": "Bird 1", "ja": "鳥1", "ko": "" },
+        "buttonNames": { "en": "Bird 1", "ja": "鳥1", "ko": "새1" },
         "source": "https://www.youtube.com/watch?v=Ch_wxhDnGCY",
         "timeStart": "00:46:44.004",
         "timeEnd": "00:46:44.726"
       },
       {
         "fileName": "bird2.opus",
-        "buttonNames": { "en": "Bird 2", "ja": "鳥2", "ko": "" },
+        "buttonNames": { "en": "Bird 2", "ja": "鳥2", "ko": "새2" },
         "source": "https://www.youtube.com/watch?v=Ch_wxhDnGCY",
         "timeStart": "00:46:52.318",
         "timeEnd": "00:46:53:256"
@@ -96,7 +110,7 @@
       },
       {
         "fileName": "giggle.opus",
-        "buttonNames": { "en": "Laugh", "ja": "", "ko": "" },
+        "buttonNames": { "en": "Laugh", "ja": "笑い", "ko": "웃음" },
         "source": "https://www.youtube.com/watch?v=SoAZ7JgcC6A",
         "timeStart": "00:00:39.739",
         "timeEnd": "00:00:40.500"
@@ -116,22 +130,15 @@
         "timeEnd": "01:36:37.485"
       },
       {
-        "fileName": "mogumogu.opus",
-        "buttonNames": { "en": "Mogumogu", "ja": "", "ko": "" },
-        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
-        "timeStart": "02:41:35.251",
-        "timeEnd": "02:41:36.624"
-      },
-      {
         "fileName": "moo.opus",
-        "buttonNames": { "en": "Moo", "ja": "", "ko": "" },
+        "buttonNames": { "en": "Cow", "ja": "牛", "ko": "소" },
         "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
         "timeStart": "02:47:59.959",
         "timeEnd": "02:48:01.410"
       },
       {
         "fileName": "nyooom.opus",
-        "buttonNames": { "en": "Car 1", "ja": "車1", "ko": "자동차2" },
+        "buttonNames": { "en": "Car 1", "ja": "車1", "ko": "자동차1" },
         "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
         "timeStart": "01:35:24.607",
         "timeEnd": "01:35:26.519"
@@ -169,16 +176,8 @@
         "timeEnd": "01:37:01.753"
       },
       {
-        "fileName": "yumyum.opus",
-        "buttonNames": { "en": "Eating", "ja": "", "ko": "" },
-        "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
-        "timeStart": "02:41:36.797",
-        "timeEnd": "02:41:39.069"
-      },
-
-      {
         "fileName": "unknown1.opus",
-        "buttonNames": { "en": "Unknown 1", "ja": "", "ko": "" },
+        "buttonNames": { "en": "Unknown", "ja": "???", "ko": "???" },
         "source": "https://www.youtube.com/watch?v=9SAvWliYeaA",
         "timeStart": "01:37:52.060",
         "timeEnd": "01:37:53.581"
