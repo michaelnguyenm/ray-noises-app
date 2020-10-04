@@ -16,7 +16,7 @@ One of the following can be used but Docker is recommended. Follow the instructi
 
 The image can be pulled from docker using the following command:
 
-    docker pull michaelnguyenm/ray-noises-app
+    docker pull michaelnguyenm/ray-noises-app:latest
 
 ### Building
 
@@ -47,7 +47,7 @@ MEDIA_LOCATION: Default is the public folder
 Set this value to the base URL that holds an audio.json file seen in the public folder as an example.
 CORS must be enabled for the location.
 IPIFY_KEY: Default is "", an empty sting
-Set this value to the key provided at [IPIFY](https://www.ipify.org/) to check geolocation,
+Set this value to the key provided by geo.ipify.org to check geolocation,
 otherwise the app will default to English.
 ```
 
