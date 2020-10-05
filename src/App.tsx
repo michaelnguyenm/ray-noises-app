@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Box, Grid, Hidden, Typography } from "@material-ui/core";
 import { GitHub } from "@material-ui/icons";
@@ -38,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
  */
 function App() {
   const classes = useStyles();
+
+  useEffect(() => {
+    window.scrollTo(0, 1);
+  });
 
   return (
     <Box component="div" height="100vh" className={classes.box}>
