@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 import { Box, Grid, Hidden, Typography } from "@material-ui/core";
 import { GitHub } from "@material-ui/icons";
@@ -38,9 +38,10 @@ const useStyles = makeStyles((theme) => ({
  */
 function App() {
   const classes = useStyles();
+  const scrollInto = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    window.scrollTo(0, 1);
+    if (scrollInto?.current) scrollInto.current.scrollIntoView();
   });
 
   return (
@@ -56,7 +57,7 @@ function App() {
         </Grid>
       </Grid>
       <RayImage />
-      <Box className={classes.boxFooter}>
+      <Box {...({ ref: scrollInto } as any)} className={classes.boxFooter}>
         <Typography>Unofficial fansite - 非公式ファンサイトです</Typography>
       </Box>
       {/* This has intentionally been hidden to prevent self-promotion on the public website. */}
