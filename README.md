@@ -84,7 +84,7 @@ Under the public folder, there is an audio.json file. This file contains informa
 ]
 ```
 
-There can be multiple sections and multiple audio files under each section. The default for sections as well as button names is en/English. Source URLs are provided to the original youtube videos in the json file, but they are not required. The timeStart and timeEnd are timestamps that can be used in Audacity to get the exact clip that I used, but are also not required for the app to work. I have chosen to use Opus as the audio codec as it is a modern low-latency codec that works in all modern browsers provided that they are updated to at least a version from 2017.
+There can be multiple sections and multiple audio files under each section. The default for sections as well as button names is en/English. Source URLs are provided to the original youtube videos in the json file, but they are not required. The timeStart and timeEnd are timestamps that can be used in Audacity to get the exact clip that I used, but are also not required for the app to work. I have chosen to use mp3 because it's virtually compatible with every browser.
 
 ### Contact
 
