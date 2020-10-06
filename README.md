@@ -61,7 +61,7 @@ As a note, geolocation by IP is blocked by some browsers by default, and IPIFY o
 
 Under the public folder, there is an audio.json file. This file contains information on various audio files, including the file name, the source of the audio, and how the button in the UI should be labeled for the audio file. An example of how the json file is formatted:
 
-```json
+```yaml
 [
   {
     "en": "SECTION_ENGLISH",

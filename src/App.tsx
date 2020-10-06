@@ -38,8 +38,10 @@ const useStyles = makeStyles((theme) => ({
  */
 function App() {
   const classes = useStyles();
-  const scrollInto = useRef<HTMLDivElement>(null);
 
+  // Used for scrolling the website completely into view at the bottom, mainly
+  // for mobile devices where the URL bar will be at the top
+  const scrollInto = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (scrollInto?.current) scrollInto.current.scrollIntoView();
   });
