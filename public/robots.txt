@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# Certain social media sites are whitelisted to allow crawlers to access page markup when links to / are shared. 
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
 User-agent: *
 Disallow:
