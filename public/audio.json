@@ -102,11 +102,11 @@
         "timeEnd": "01:37:28.769"
       },
       {
-        "fileName": "mewtwo.mp3",
+        "fileName": "meowth.mp3",
         "buttonNames": {
-          "en": "Mewtwo",
-          "ja": "ミュウツー",
-          "ko": "뮤츠"
+          "en": "Meowth",
+          "ja": "ニャース",
+          "ko": "나옹"
         },
         "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
         "timeStart": "01:37:35.832",
