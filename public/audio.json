@@ -32,6 +32,20 @@
         "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
         "timeStart": "02:41:35.251",
         "timeEnd": "02:41:36.624"
+      },
+      {
+        "fileName": "ja_hentai.mp3",
+        "buttonNames": { "en": "Pervert", "ja": "ヘンタイ", "ko": "변태" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:36:39.867",
+        "timeEnd": "01:36:40.368"
+      },
+      {
+        "fileName": "ja_baka.mp3",
+        "buttonNames": { "en": "Idiot", "ja": "バカ", "ko": "바보" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:36:40.400",
+        "timeEnd": "01:36:40.716"
       }
     ]
   },
@@ -68,6 +82,35 @@
         "source": "https://www.youtube.com/watch?v=kT5RgdPJ6UI",
         "timeStart": "02:41:36.797",
         "timeEnd": "02:41:39.069"
+      }
+    ]
+  },
+  {
+    "en": "Pokemon",
+    "ja": "ポケモン",
+    "ko": "",
+    "audioFiles": [
+      {
+        "fileName": "pikachu.mp3",
+        "buttonNames": {
+          "en": "Pikachu",
+          "ja": "ピカチュウ",
+          "ko": "피카츄"
+        },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:37:27.688",
+        "timeEnd": "01:37:28.769"
+      },
+      {
+        "fileName": "mewtwo.mp3",
+        "buttonNames": {
+          "en": "Mewtwo",
+          "ja": "ミュウツー",
+          "ko": "뮤츠"
+        },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:37:35.832",
+        "timeEnd": "01:37:37.909"
       }
     ]
   },
@@ -109,11 +152,74 @@
         "timeEnd": "01:34:22.329"
       },
       {
+        "fileName": "cough.mp3",
+        "buttonNames": { "en": "Cough", "ja": "咳", "ko": "기침" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:44:20.749",
+        "timeEnd": "01:44:21:889"
+      },
+      {
+        "fileName": "cat1.mp3",
+        "buttonNames": { "en": "Cat 1", "ja": "猫1", "ko": "고양이1" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:36:11.911",
+        "timeEnd": "01:36:12.604"
+      },
+      {
+        "fileName": "cat2.mp3",
+        "buttonNames": { "en": "Cat 2", "ja": "猫2", "ko": "고양이2" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:36:12.795",
+        "timeEnd": "01:36:14.574"
+      },
+      {
+        "fileName": "dog1.mp3",
+        "buttonNames": { "en": "Dog 1", "ja": "犬1", "ko": "개1" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:32:33.281",
+        "timeEnd": "01:32:33.728"
+      },
+      {
+        "fileName": "dog2.mp3",
+        "buttonNames": { "en": "Dog 2", "ja": "犬2", "ko": "개2" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:32:37.030",
+        "timeEnd": "01:32:38.755"
+      },
+      {
+        "fileName": "fps1.mp3",
+        "buttonNames": { "en": "FPS Gun 1", "ja": "FPSの銃1", "ko": "FPS의총1" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:33:04.038",
+        "timeEnd": "01:33:05.955"
+      },
+      {
+        "fileName": "fps2.mp3",
+        "buttonNames": { "en": "FPS Gun 2", "ja": "FPSの銃2", "ko": "FPS의총2" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:33:10.715",
+        "timeEnd": "01:33:11.833"
+      },
+      {
         "fileName": "giggle.mp3",
-        "buttonNames": { "en": "Laugh", "ja": "笑い", "ko": "웃음" },
+        "buttonNames": { "en": "Laugh 1", "ja": "笑い1", "ko": "웃음1" },
         "source": "https://www.youtube.com/watch?v=SoAZ7JgcC6A",
         "timeStart": "00:00:39.739",
         "timeEnd": "00:00:40.500"
+      },
+      {
+        "fileName": "laugh2.mp3",
+        "buttonNames": { "en": "Laugh 2", "ja": "笑い2", "ko": "웃음2" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:32:11.736",
+        "timeEnd": "01:32:13.185"
+      },
+      {
+        "fileName": "laugh3.mp3",
+        "buttonNames": { "en": "Laugh 3", "ja": "笑い3", "ko": "웃음3" },
+        "source": "https://www.youtube.com/watch?v=Iv6_m9f3uuw",
+        "timeStart": "01:37:49.665",
+        "timeEnd": "01:37:51.200"
       },
       {
         "fileName": "cicada.mp3",
