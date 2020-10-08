@@ -10,11 +10,9 @@ const useStyles = makeStyles((theme) => ({
   },
   imageSm: {
     right: 0,
-    zIndex: 99,
   },
   imageMd: {
     paddingLeft: "57vw",
-    zIndex: 99,
   },
 }));
 

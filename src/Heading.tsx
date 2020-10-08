@@ -8,16 +8,17 @@ const useStyles = makeStyles((theme) => ({
     background:
       "linear-gradient(to bottom, #749fd2, #749fd2 30px, #ffffff 30px)",
     overflowY: "hidden",
-    zIndex: 101,
   },
   boxLogo: {
     float: "left",
+    position: "relative",
     zIndex: 101,
   },
   boxFloatLeft: {
     paddingTop: "30px",
     height: "99px",
     float: "left",
+    position: "relative",
     zIndex: 101,
   },
   boxFloatRight: {
@@ -66,17 +67,6 @@ function Heading() {
           <Link
             target="_blank"
             rel="noopener"
-            href="https://twitter.com/RayAkira2434"
-          >
-            <img
-              style={{ paddingLeft: "15px", height: "30px" }}
-              alt="Akira Ray Twitter"
-              src="./akiraray_twitter_full.png"
-            />
-          </Link>
-          <Link
-            target="_blank"
-            rel="noopener"
             href="https://twitter.com/search?q=%23Ray_live&src=hashtag_click"
           >
             <img
@@ -94,6 +84,17 @@ function Heading() {
               style={{ paddingLeft: "15px", height: "30px" }}
               alt="Akira Ray Art"
               src="./akiraray_twitter_tag_art.png"
+            />
+          </Link>
+          <Link
+            target="_blank"
+            rel="noopener"
+            href="https://twitter.com/RayAkira2434"
+          >
+            <img
+              style={{ paddingLeft: "15px", height: "30px" }}
+              alt="Akira Ray Twitter"
+              src="./akiraray_twitter_full.png"
             />
           </Link>
         </Box>
