@@ -1,9 +1,12 @@
 version: "3.8"
+
 services:
-  web:
+  ray-noises-app:
     build: .
+    container_name: ray-noises-app
+    image: michaelnguyenm/ray-noises-app:latest
+    restart: unless-stopped
     ports:
-      - "3000:80"
+      - "127.0.0.1:1338:80"
     environment:
-      MEDIA_LOCATION:
-      IPIFY_KEY:
+      IPIFY_KEY: 
